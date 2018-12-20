@@ -9,9 +9,40 @@ db.create_all()
 返回首页index.html
 '''
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods=['GET'])
 def index():
-    return render_template('index.html')
+    img_p = Image.query.filter(Image.imgID.startswith('p')).all()
+    img_bl = Image.query.filter(Image.imgID.startswith('bl')).all()
+    recipe_list = []
+    links = [
+        'single?recipe=r201812001',
+        'single?recipe=r201812002',
+        'single?recipe=r201812003',
+        'single?recipe=r201812004'
+    ]
+    img_s = Image.query.filter(Image.imgID.like("s%.jpg")).all()
+
+    for link, img in zip(links, img_s):
+        recipe = [link, img]
+        recipe_list.append(recipe)
+
+    example_recipe = Recipe.query.filter(Recipe.imgID.startswith('b')).all()
+
+    # print('-------------In func index---------------')
+    # print(img_p)
+    # print(img_bl)
+    # print(img_s)
+    # print(recipe_list)
+    # print(example_recipe)
+
+
+    return render_template(
+        'index.html',
+        img_p=img_p,
+        img_bl=img_bl,
+        example_recipe=example_recipe,
+        recipe_list=recipe_list
+    )
 
 
 '''
@@ -30,6 +61,7 @@ def book():
     y, m, d = t[2], t[0], t[1]
     bookDate = '{}-{}-{}'.format(y, m, d)
 
+    # print('-----------In func book------------')
     # print(bookTime)
     # print(bookDate)
     # print(countPeople)
@@ -79,7 +111,23 @@ def services():
 '''
 @app.route('/gallery')
 def gallery():
-    return render_template('gallery.html')
+    img_g = Image.query.filter(Image.imgID.startswith('g')).all()
+    img_g1 = img_g[0:3]
+    img_g2 = img_g[3:6]
+    img_g3 = img_g[6:9]
+
+    print('-----------In func gallery-----------')
+    print(img_g)
+    print(img_g1)
+    print(img_g2)
+    print(img_g3)
+
+    return render_template(
+        'gallery.html',
+        img_g1=img_g1,
+        img_g2=img_g2,
+        img_g3=img_g3
+    )
 
 
 '''
@@ -127,15 +175,19 @@ def suggest():
 def single():
     recipeid = request.args.get('recipe')
 
+    if not recipeid:
+        recipeid = 'r201812001'
+
+
     recipe = Recipe.query.filter(Recipe.recipeID == recipeid).first()
     image = Image.query.filter(Image.imgID == recipe.imgID).first()
     reviews = Comment.query.filter(Comment.recipeID == recipeid).all()
 
-    # print('-------------In func single-------------')
-    # print(recipeid)
-    # print(recipe.recipeDescribe.encode('utf-8'))
-    # print(image.imgPath)
-    # print(reviews)
+    print('-------------In func single-------------')
+    print(recipeid)
+    print(recipe.recipeDescribe.encode('utf-8'))
+    print(image.imgPath)
+    print(reviews)
 
     return render_template(
         'single.html',

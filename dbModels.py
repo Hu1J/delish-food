@@ -22,7 +22,7 @@ class Book(db.Model):
 
         此表定义触发器，在插入数据的时候转换bookDate为Oracle的Datetime数据类型(to_date)
     '''
-    __tablename__ = 'Book'
+    __tablename__ = 'YRH_Book'
     bookID = db.Column(db.String(20), primary_key=True)
     bookTime = db.Column(db.String(20))
     bookDate = db.Column(db.DateTime)
@@ -51,9 +51,9 @@ class Recipe(db.Model):
         str(20)-str(20)-str(50)-text
          主键   外键
     '''
-    __tablename__ = 'Recipe'
+    __tablename__ = 'YRH_Recipe'
     recipeID = db.Column(db.String(20), primary_key=True)
-    imgID = db.Column(db.String(20), db.ForeignKey('Image.imgID'))
+    imgID = db.Column(db.String(20), db.ForeignKey('YRH_Image.imgID'))
     recipeName = db.Column(db.String(50))
     recipeDescribe = db.Column(db.Text)
 
@@ -72,7 +72,7 @@ class Image(db.Model):
         str(20)-str(50)
          主键
     '''
-    __tablename__ = 'Image'
+    __tablename__ = 'YRH_Image'
     imgID = db.Column(db.String(20), primary_key=True)
     imgPath = db.Column(db.String(50))
 
@@ -93,9 +93,9 @@ class Comment(db.Model):
         str(20)-str(20)-datatime-str(20)-str(50)-str(50)-text-datetime
         主键   外键
     '''
-    __tablename__ = 'Comment'
+    __tablename__ = 'YRH_Comment'
     commID = db.Column(db.String(20), primary_key=True)
-    recipeID = db.Column(db.String(20), db.ForeignKey('Recipe.recipeID'))
+    recipeID = db.Column(db.String(20), db.ForeignKey('YRH_Recipe.recipeID'))
     viewerName = db.Column(db.String(20))
     viewerEmail = db.Column(db.String(50))
     viewerPhone = db.Column(db.String(50))
@@ -114,13 +114,21 @@ class Comment(db.Model):
         return '<Comment {}, {}>'.format(self.commID, self.recipeID)
 
 
-# TODO
-'''
-5.About  -- 详细信息表
-    电话-邮箱-地址
-    phone-email-address
-    str(20)-str(50)-str(100)
-'''
+
+class Detail(db.Model):
+    '''
+    5.About  -- 详细信息表
+        电话-邮箱-地址
+        phone-email-address
+        str(20)-str(50)-str(100)
+    '''
+    __tablename__ = 'YRH_Detail'
+    phone = db.Column(db.String(20), primary_key=True)
+    email = db.Column(db.String(50))
+    address = db.Column(db.String(100))
+
+    def __repr__(self):
+        return '<Detail {}>'.format(self.phone)
 
 
 class Chef(db.Model):
@@ -131,11 +139,11 @@ class Chef(db.Model):
         str(20)-str(20)-str(20)-str(20)-text
          主键           外键
     '''
-    __tablename__ = 'Chef'
+    __tablename__ = 'YRH_Chef'
     chefID = db.Column(db.String(20), primary_key=True)
     firstName = db.Column(db.String(20))
     lastName = db.Column(db.String(20))
-    photo = db.Column(db.String(20), db.ForeignKey('Image.imgID'))
+    photo = db.Column(db.String(20), db.ForeignKey('YRH_Image.imgID'))
     describe = db.Column(db.Text)
 
     def __repr__(self):
@@ -146,11 +154,11 @@ class Contact(db.Model):
     '''
     7.Contact  -- 联系我们（意见）
         意见ID-名字-邮箱-内容
-        sugID-recTime-name-email-describe
+        sugID-name-email-describe
         str(20)-datetime-str(20)-str(50)-text
          主键
     '''
-    __tablename__ = 'Contact'
+    __tablename__ = 'YRH_Contact'
     sugID = db.Column(db.String(20), primary_key=True)
     name = db.Column(db.String(20))
     email = db.Column(db.String(50))

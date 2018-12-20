@@ -32,11 +32,14 @@
       <ObjectId>1</ObjectId>
       <CreatedTimestamp>2011-08-29.06:10:49</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-30.01:48:30</ModifiedTimestamp>
-      <IntrospectionTimestamp>2018-12-17.10:56:01</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-12-19.16:09:17</IntrospectionTimestamp>
       <Visible>1</Visible>
     </schema>
     <schema id="11" parent="1" name="SCOTT">
       <ObjectId>48</ObjectId>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-20.00:05:13</ModifiedTimestamp>
+      <IntrospectionTimestamp>2018-12-20.07:59:10</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -45,10 +48,6 @@
     </schema>
     <schema id="13" parent="1" name="SYSTEM">
       <ObjectId>5</ObjectId>
-      <CreatedTimestamp>2011-08-29.06:10:59</CreatedTimestamp>
-      <ModifiedTimestamp>2011-08-29.06:18:14</ModifiedTimestamp>
-      <IntrospectionTimestamp>2018-12-17.12:05:05</IntrospectionTimestamp>
-      <CommentsHash>2549628204669084</CommentsHash>
     </schema>
     <schema id="14" parent="1" name="XDB">
       <ObjectId>34</ObjectId>
@@ -27874,5 +27873,1512 @@
       <TargetSchemaName>SYS</TargetSchemaName>
       <TargetObjectName>_USER_COMPARISON_ROW_DIF</TargetObjectName>
     </synonym>
+    <sequence id="3990" parent="11" name="GENERATE_BUYDID">
+      <ObjectId>20219</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:03:29</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:03:29</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <sequence id="3991" parent="11" name="GENERATE_INDID">
+      <ObjectId>20228</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <sequence id="3992" parent="11" name="GENERATE_OUTDID">
+      <ObjectId>20238</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:20:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <sequence id="3993" parent="11" name="GENERATE_SALEDID">
+      <ObjectId>20233</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <table id="3994" parent="11" name="Book">
+      <ObjectId>20038</ObjectId>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:28:27</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="3995" parent="11" name="Chef">
+      <ObjectId>20072</ObjectId>
+      <CreatedTimestamp>2018-12-18.07:12:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-18.07:12:12</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="3996" parent="11" name="Comment">
+      <ObjectId>20061</ObjectId>
+      <CreatedTimestamp>2018-12-17.15:52:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.15:52:11</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="3997" parent="11" name="Contact">
+      <ObjectId>20042</ObjectId>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="3998" parent="11" name="Detail">
+      <ObjectId>20076</ObjectId>
+      <CreatedTimestamp>2018-12-18.08:52:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-18.08:52:17</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="3999" parent="11" name="Image">
+      <ObjectId>20040</ObjectId>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4000" parent="11" name="LWN_CUSTOMER">
+      <ObjectId>20163</ObjectId>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4001" parent="11" name="LWN_EMPLOYEE">
+      <ObjectId>20161</ObjectId>
+      <CreatedTimestamp>2018-12-19.11:53:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.11:53:30</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4002" parent="11" name="LWN_ORDERDETAIL">
+      <ObjectId>20169</ObjectId>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4003" parent="11" name="LWN_ORDERMASTER">
+      <ObjectId>20167</ObjectId>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4004" parent="11" name="LWN_PROCUREMENT">
+      <ObjectId>20201</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:14:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:14:21</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4005" parent="11" name="LWN_PROCUREMENT_DETIAL">
+      <ObjectId>20203</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:14:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:14:22</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4006" parent="11" name="LWN_PRODUCT">
+      <ObjectId>20165</ObjectId>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4007" parent="11" name="LWN_PUTIN_STORAGE">
+      <ObjectId>20205</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:14:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:05:42</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4008" parent="11" name="LWN_STOCK">
+      <ObjectId>20209</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:30:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:30:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4009" parent="11" name="LWN_SUPPLIER">
+      <ObjectId>20189</ObjectId>
+      <CreatedTimestamp>2018-12-19.21:22:23</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.21:22:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4010" parent="11" name="MXY_BUYORDER">
+      <ObjectId>20221</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:15:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:15:52</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4011" parent="11" name="MXY_BUYORDERDETAIL">
+      <ObjectId>20223</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:15:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:15:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4012" parent="11" name="MXY_CUSTOMER">
+      <ObjectId>20211</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:36:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-20.00:05:13</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4013" parent="11" name="MXY_FRUIT">
+      <ObjectId>20214</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:37:40</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4014" parent="11" name="MXY_INTOWARE">
+      <ObjectId>20226</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4015" parent="11" name="MXY_INTOWAREDETAIL">
+      <ObjectId>20229</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4016" parent="11" name="MXY_INVENTORY">
+      <ObjectId>20217</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:38:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:38:05</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4017" parent="11" name="MXY_OUTWAREDETAIL">
+      <ObjectId>20239</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:20:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4018" parent="11" name="MXY_OUTWAREHOUSE">
+      <ObjectId>20236</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:20:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:20:38</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4019" parent="11" name="MXY_SALEORDER">
+      <ObjectId>20231</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4020" parent="11" name="MXY_SALEORDERDETAIL">
+      <ObjectId>20234</ObjectId>
+      <CreatedTimestamp>2018-12-19.23:17:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4021" parent="11" name="MXY_USER">
+      <ObjectId>20199</ObjectId>
+      <CreatedTimestamp>2018-12-19.21:30:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.21:30:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4022" parent="11" name="Recipe">
+      <ObjectId>20046</ObjectId>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="4023" parent="11" name="SPP_CONTACT">
+      <ObjectId>20218</ObjectId>
+      <CreatedTimestamp>2018-12-19.22:46:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:46:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="4024" parent="3994" name="bookID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4025" parent="3994" name="bookTime">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4026" parent="3994" name="bookDate">
+      <Position>3</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4027" parent="3994" name="countPeople">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4028" parent="3994" name="isOverFive">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4029" parent="3994" name="SYS_C006988">
+      <ObjectId>20039</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>bookID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4030" parent="3994" name="SYS_C006988">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <ColNames>bookID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006988</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="4031" parent="3994" name="FIX_BOOKDATE">
+      <ObjectId>20059</ObjectId>
+      <SourceTextLength>156</SourceTextLength>
+      <DependsOnIds>4973</DependsOnIds>
+      <CreatedTimestamp>2018-12-17.12:28:27</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:28:27</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="4032" parent="3995" name="chefID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4033" parent="3995" name="firstName">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4034" parent="3995" name="lastName">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4035" parent="3995" name="PHOTO">
+      <Position>4</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4036" parent="3995" name="DESCRIBE">
+      <Position>5</Position>
+      <DataType>CLOB|0s</DataType>
+    </column>
+    <index id="4037" parent="3995" name="SYS_C007014">
+      <ObjectId>20075</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-18.07:12:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-18.07:12:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>chefID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4038" parent="3995" name="SYS_C007014">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-18.07:12:12</ModifiedTimestamp>
+      <ColNames>chefID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007014</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4039" parent="3995" name="SYS_C007015">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-18.07:12:12</ModifiedTimestamp>
+      <ColNames>PHOTO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>Image</RefTableName>
+      <RefKeyName>SYS_C006990</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4040" parent="3996" name="commID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4041" parent="3996" name="recipeID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4042" parent="3996" name="viewerName">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4043" parent="3996" name="viewerEmail">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <column id="4044" parent="3996" name="viewerPhone">
+      <Position>5</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <column id="4045" parent="3996" name="COMM">
+      <Position>6</Position>
+      <DataType>CLOB|0s</DataType>
+    </column>
+    <column id="4046" parent="3996" name="createTime">
+      <Position>7</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="4047" parent="3996" name="SYS_C007003">
+      <ObjectId>20064</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-17.15:52:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.15:52:11</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>commID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4048" parent="3996" name="SYS_C007003">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.15:52:11</ModifiedTimestamp>
+      <ColNames>commID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007003</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4049" parent="3996" name="SYS_C007004">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.15:52:11</ModifiedTimestamp>
+      <ColNames>recipeID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>Recipe</RefTableName>
+      <RefKeyName>SYS_C006994</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4050" parent="3997" name="sugID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4051" parent="3997" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4052" parent="3997" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <column id="4053" parent="3997" name="DESCRIBE">
+      <Position>4</Position>
+      <DataType>CLOB|0s</DataType>
+    </column>
+    <index id="4054" parent="3997" name="SYS_C006992">
+      <ObjectId>20045</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>sugID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4055" parent="3997" name="SYS_C006992">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <ColNames>sugID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006992</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4056" parent="3998" name="PHONE">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4057" parent="3998" name="EMAIL">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <column id="4058" parent="3998" name="ADDRESS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(100 char)|0us</DataType>
+    </column>
+    <index id="4059" parent="3998" name="SYS_C007017">
+      <ObjectId>20077</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-18.08:52:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-18.08:52:17</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PHONE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4060" parent="3998" name="SYS_C007017">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-18.08:52:17</ModifiedTimestamp>
+      <ColNames>PHONE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007017</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4061" parent="3999" name="imgID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4062" parent="3999" name="imgPath">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <index id="4063" parent="3999" name="SYS_C006990">
+      <ObjectId>20041</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>imgID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4064" parent="3999" name="SYS_C006990">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <ColNames>imgID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006990</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4065" parent="4000" name="CUSTOMERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4066" parent="4000" name="CUSTOMERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4067" parent="4000" name="TELEPHONE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4068" parent="4000" name="ADDRESS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4069" parent="4000" name="ZIP">
+      <Position>5</Position>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+    </column>
+    <index id="4070" parent="4000" name="SYS_C007021">
+      <ObjectId>20164</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CUSTOMERNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4071" parent="4000" name="SYS_C007021">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>CUSTOMERNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007021</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4072" parent="4001" name="EMPLOYEENO">
+      <Position>1</Position>
+      <DataType>CHAR(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4073" parent="4001" name="EMPLOYEENAME">
+      <Position>2</Position>
+      <DataType>CHAR(10 byte)|0s</DataType>
+    </column>
+    <column id="4074" parent="4001" name="SEX">
+      <Position>3</Position>
+      <DataType>CHAR(2 byte)|0s</DataType>
+    </column>
+    <column id="4075" parent="4001" name="DEPARTMENT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="4076" parent="4001" name="HEADSHIP">
+      <Position>5</Position>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+    </column>
+    <column id="4077" parent="4001" name="HIREDATE">
+      <Position>6</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4078" parent="4001" name="BIRTHDAY">
+      <Position>7</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4079" parent="4001" name="SALARY">
+      <Position>8</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+    </column>
+    <column id="4080" parent="4001" name="ADDRESS">
+      <Position>9</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="4081" parent="4001" name="TELEPHONE">
+      <Position>10</Position>
+      <DataType>CHAR(13 byte)|0s</DataType>
+    </column>
+    <index id="4082" parent="4001" name="SYS_C007020">
+      <ObjectId>20162</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.11:53:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.11:53:30</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>EMPLOYEENO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4083" parent="4001" name="SYS_C007020">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.11:53:30</ModifiedTimestamp>
+      <ColNames>EMPLOYEENO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007020</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4084" parent="4002" name="ORDERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4085" parent="4002" name="PRODUCTNO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4086" parent="4002" name="QUANTITY">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4087" parent="4002" name="PRICE">
+      <Position>4</Position>
+      <DataType>NUMBER(7,2 digit)|0s</DataType>
+    </column>
+    <index id="4088" parent="4002" name="SYS_C007025">
+      <ObjectId>20170</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ORDERNO
+PRODUCTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4089" parent="4002" name="SYS_C007025">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>ORDERNO
+PRODUCTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007025</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4090" parent="4002" name="SYS_C007026">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>ORDERNO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>LWN_ORDERMASTER</RefTableName>
+      <RefKeyName>SYS_C007023</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="4091" parent="4002" name="SYS_C007027">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>PRODUCTNO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>LWN_PRODUCT</RefTableName>
+      <RefKeyName>SYS_C007022</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4092" parent="4003" name="ORDERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4093" parent="4003" name="CUSTOMERNO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+    </column>
+    <column id="4094" parent="4003" name="SALERNO">
+      <Position>3</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="4095" parent="4003" name="ORDERDATE">
+      <Position>4</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4096" parent="4003" name="ORDERSUM">
+      <Position>5</Position>
+      <DataType>NUMBER(9,2 digit)|0s</DataType>
+    </column>
+    <column id="4097" parent="4003" name="INVOICENO">
+      <Position>6</Position>
+      <DataType>CHAR(10 byte)|0s</DataType>
+    </column>
+    <index id="4098" parent="4003" name="SYS_C007023">
+      <ObjectId>20168</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ORDERNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4099" parent="4003" name="SYS_C007023">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>ORDERNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007023</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4100" parent="4003" name="SYS_C007024">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>CUSTOMERNO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>LWN_CUSTOMER</RefTableName>
+      <RefKeyName>SYS_C007021</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4101" parent="4004" name="ORDERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4102" parent="4004" name="SUPPLIER">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+    </column>
+    <column id="4103" parent="4004" name="SALENO">
+      <Position>3</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="4104" parent="4004" name="ORDERSUM">
+      <Position>4</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+    </column>
+    <column id="4105" parent="4004" name="ORDERDATE">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4106" parent="4004" name="INVOICENO">
+      <Position>6</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4107" parent="4004" name="STATES">
+      <Position>7</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4108" parent="4004" name="SYS_C007044">
+      <ObjectId>20202</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:14:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:14:21</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ORDERNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4109" parent="4004" name="SYS_C007044">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:14:21</ModifiedTimestamp>
+      <ColNames>ORDERNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007044</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4110" parent="4005" name="ORDERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4111" parent="4005" name="PRODUCTNO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4112" parent="4005" name="QTY">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4113" parent="4005" name="PRICE">
+      <Position>4</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+    </column>
+    <index id="4114" parent="4005" name="SYS_C007045">
+      <ObjectId>20204</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:14:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:14:22</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ORDERNO
+PRODUCTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4115" parent="4005" name="SYS_C007045">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:14:22</ModifiedTimestamp>
+      <ColNames>ORDERNO
+PRODUCTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007045</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4116" parent="4006" name="PRODUCTNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4117" parent="4006" name="PRODUCTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4118" parent="4006" name="PRODUCTCLASS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4119" parent="4006" name="PRODUCTPRICE">
+      <Position>4</Position>
+      <DataType>NUMBER(7,2 digit)|0s</DataType>
+    </column>
+    <index id="4120" parent="4006" name="SYS_C007022">
+      <ObjectId>20166</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.16:08:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PRODUCTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4121" parent="4006" name="SYS_C007022">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.16:08:02</ModifiedTimestamp>
+      <ColNames>PRODUCTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007022</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4122" parent="4007" name="PUTINNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4123" parent="4007" name="ORDERNO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(12 byte)|0s</DataType>
+    </column>
+    <column id="4124" parent="4007" name="SALENO">
+      <Position>3</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="4125" parent="4007" name="PUTINDATE">
+      <Position>4</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="4126" parent="4007" name="SYS_C007046">
+      <ObjectId>20206</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:14:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:14:22</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PUTINNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4127" parent="4007" name="SYS_C007046">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:14:22</ModifiedTimestamp>
+      <ColNames>PUTINNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007046</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="4128" parent="4007" name="STOREPRODUCT">
+      <ObjectId>20220</ObjectId>
+      <SourceTextLength>313</SourceTextLength>
+      <DependsOnIds>20165,20203,20209</DependsOnIds>
+      <CreatedTimestamp>2018-12-19.23:05:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:05:42</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-row</Turn>
+      <Condition> new.ORDERNO is not null </Condition>
+    </trigger>
+    <column id="4129" parent="4008" name="PRODUCTNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4130" parent="4008" name="QTY">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4131" parent="4008" name="SYS_C007049">
+      <ObjectId>20210</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:30:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:30:54</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PRODUCTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4132" parent="4008" name="SYS_C007049">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:30:54</ModifiedTimestamp>
+      <ColNames>PRODUCTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007049</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4133" parent="4008" name="SYS_C007050">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:30:54</ModifiedTimestamp>
+      <ColNames>PRODUCTNO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>LWN_PRODUCT</RefTableName>
+      <RefKeyName>SYS_C007022</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4134" parent="4009" name="SUPPLIERNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4135" parent="4009" name="SUPPLIERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4136" parent="4009" name="TELEPHONE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4137" parent="4009" name="ADDRESS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4138" parent="4009" name="ZIP">
+      <Position>5</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <index id="4139" parent="4009" name="SYS_C007032">
+      <ObjectId>20190</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.21:22:23</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.21:22:23</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>SUPPLIERNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4140" parent="4009" name="SYS_C007032">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.21:22:23</ModifiedTimestamp>
+      <ColNames>SUPPLIERNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007032</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4141" parent="4010" name="BUYID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4142" parent="4010" name="SELLER">
+      <Position>2</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+    </column>
+    <column id="4143" parent="4010" name="BUYER">
+      <Position>3</Position>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
+      <DefaultExpression>&apos;花果山水果商店&apos;</DefaultExpression>
+    </column>
+    <column id="4144" parent="4010" name="PURCHASEDATE">
+      <Position>4</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4145" parent="4010" name="TOTALPRICE">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4146" parent="4010" name="TOTALCOUNT">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4147" parent="4010" name="SYS_C007059">
+      <ObjectId>20222</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:15:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:15:52</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>BUYID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4148" parent="4010" name="SYS_C007059">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:15:52</ModifiedTimestamp>
+      <ColNames>BUYID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007059</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4149" parent="4011" name="BBUYID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4150" parent="4011" name="BUYID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4151" parent="4011" name="FID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4152" parent="4011" name="BCOUNT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4153" parent="4011" name="SYS_C007060">
+      <ObjectId>20224</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:15:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:15:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>BBUYID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4154" parent="4011" name="SYS_C007060">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:15:59</ModifiedTimestamp>
+      <ColNames>BBUYID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007060</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4155" parent="4011" name="FK_BD1">
+      <ModifiedTimestamp>2018-12-19.23:15:59</ModifiedTimestamp>
+      <ColNames>BUYID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_BUYORDER</RefTableName>
+      <RefKeyName>SYS_C007059</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="4156" parent="4011" name="FK_BD2">
+      <ModifiedTimestamp>2018-12-19.23:15:59</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_FRUIT</RefTableName>
+      <RefKeyName>SYS_C007056</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4157" parent="4012" name="CNO">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4158" parent="4012" name="CNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4159" parent="4012" name="CADDRESS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4160" parent="4012" name="SEX">
+      <Position>4</Position>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="4161" parent="4012" name="PHONENUM">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4162" parent="4012" name="SYS_C007053">
+      <ObjectId>20212</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:36:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:36:32</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="4163" parent="4012" name="SYS_C007054">
+      <ObjectId>20213</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:36:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:36:32</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4164" parent="4012" name="SYS_C007053">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:36:32</ModifiedTimestamp>
+      <ColNames>CNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007053</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="4165" parent="4012" name="SYS_C007054">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:36:32</ModifiedTimestamp>
+      <ColNames>CNAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007054</UnderlyingIndexName>
+    </key>
+    <check id="4166" parent="4012" name="SYS_C007052">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:36:32</ModifiedTimestamp>
+      <ColNames>SEX</ColNames>
+      <Predicate>sex IN (&apos;男&apos;,&apos;女&apos;)</Predicate>
+    </check>
+    <column id="4167" parent="4013" name="FID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4168" parent="4013" name="FNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4169" parent="4013" name="MADE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4170" parent="4013" name="WEIGHT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4171" parent="4013" name="DANJIA">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4172" parent="4013" name="SHOUJIA">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4173" parent="4013" name="SUPPLIER">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4174" parent="4013" name="SCTIME">
+      <Position>8</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="4175" parent="4013" name="SYS_C007056">
+      <ObjectId>20215</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>FID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="4176" parent="4013" name="SYS_C007057">
+      <ObjectId>20216</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.22:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.22:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>FNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4177" parent="4013" name="SYS_C007056">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:37:40</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007056</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="4178" parent="4013" name="SYS_C007057">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.22:37:40</ModifiedTimestamp>
+      <ColNames>FNAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007057</UnderlyingIndexName>
+    </key>
+    <column id="4179" parent="4014" name="INID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4180" parent="4014" name="BUYID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4181" parent="4014" name="INDATE">
+      <Position>3</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4182" parent="4014" name="CHECKER">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <index id="4183" parent="4014" name="SYS_C007063">
+      <ObjectId>20227</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:17:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>INID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4184" parent="4014" name="SYS_C007063">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <ColNames>INID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007063</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4185" parent="4014" name="FK_INT">
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <ColNames>BUYID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_BUYORDER</RefTableName>
+      <RefKeyName>SYS_C007059</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4186" parent="4015" name="INDID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4187" parent="4015" name="INID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4188" parent="4015" name="FID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4189" parent="4015" name="INCOUNT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4190" parent="4015" name="SYS_C007065">
+      <ObjectId>20230</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:17:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>INDID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4191" parent="4015" name="SYS_C007065">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <ColNames>INDID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007065</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4192" parent="4015" name="FK_ID1">
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <ColNames>INID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_INTOWARE</RefTableName>
+      <RefKeyName>SYS_C007063</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="4193" parent="4015" name="FK_ID2">
+      <ModifiedTimestamp>2018-12-19.23:17:04</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_FRUIT</RefTableName>
+      <RefKeyName>SYS_C007056</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4194" parent="4016" name="FID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4195" parent="4016" name="IADRESS">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <DefaultExpression>&apos;福建福州仓&apos;</DefaultExpression>
+    </column>
+    <column id="4196" parent="4016" name="IACOUNT">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4197" parent="4016" name="REMARK">
+      <Position>4</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+      <DefaultExpression>&apos;无&apos;</DefaultExpression>
+    </column>
+    <foreign-key id="4198" parent="4016" name="FK_INV">
+      <ModifiedTimestamp>2018-12-19.22:38:05</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_FRUIT</RefTableName>
+      <RefKeyName>SYS_C007056</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4199" parent="4017" name="OUTDID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4200" parent="4017" name="OUTID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4201" parent="4017" name="FID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4202" parent="4017" name="OUTCOUNT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4203" parent="4017" name="SYS_C007075">
+      <ObjectId>20240</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:20:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>OUTDID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4204" parent="4017" name="SYS_C007075">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <ColNames>OUTDID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007075</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4205" parent="4017" name="FK_OUT1">
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <ColNames>OUTID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_OUTWAREHOUSE</RefTableName>
+      <RefKeyName>SYS_C007073</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="4206" parent="4017" name="FK_OUT2">
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_FRUIT</RefTableName>
+      <RefKeyName>SYS_C007056</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4207" parent="4018" name="OUTID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4208" parent="4018" name="SALEID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4209" parent="4018" name="OUTDATE">
+      <Position>3</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4210" parent="4018" name="CAOZUO">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4211" parent="4018" name="GETDATE">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="4212" parent="4018" name="SYS_C007073">
+      <ObjectId>20237</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:20:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:20:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>OUTID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4213" parent="4018" name="SYS_C007073">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <ColNames>OUTID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007073</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4214" parent="4018" name="FK_OUT">
+      <ModifiedTimestamp>2018-12-19.23:20:39</ModifiedTimestamp>
+      <ColNames>SALEID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_SALEORDER</RefTableName>
+      <RefKeyName>SYS_C007068</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4215" parent="4019" name="SALEID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4216" parent="4019" name="CNO">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4217" parent="4019" name="SALEDATE">
+      <Position>3</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="4218" parent="4019" name="BILLING">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4219" parent="4019" name="TOTALPRICE">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4220" parent="4019" name="TOTALCOUNT">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4221" parent="4019" name="SYS_C007068">
+      <ObjectId>20232</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:17:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>SALEID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4222" parent="4019" name="SYS_C007068">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <ColNames>SALEID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007068</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4223" parent="4019" name="FK_SALE">
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <ColNames>CNO</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_CUSTOMER</RefTableName>
+      <RefKeyName>SYS_C007053</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4224" parent="4020" name="SALEDID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4225" parent="4020" name="SALEID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4226" parent="4020" name="FID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4227" parent="4020" name="SALECOUNT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="4228" parent="4020" name="SYS_C007070">
+      <ObjectId>20235</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.23:17:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>SALEDID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4229" parent="4020" name="SYS_C007070">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <ColNames>SALEDID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007070</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4230" parent="4020" name="FK_SA1">
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <ColNames>SALEID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_SALEORDER</RefTableName>
+      <RefKeyName>SYS_C007068</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="4231" parent="4020" name="FK_SA2">
+      <ModifiedTimestamp>2018-12-19.23:17:53</ModifiedTimestamp>
+      <ColNames>FID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>MXY_FRUIT</RefTableName>
+      <RefKeyName>SYS_C007056</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4232" parent="4021" name="USERNAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4233" parent="4021" name="PASSWORD">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <index id="4234" parent="4021" name="SYS_C007043">
+      <ObjectId>20200</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-19.21:30:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-19.21:30:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USERNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4235" parent="4021" name="SYS_C007043">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-19.21:30:43</ModifiedTimestamp>
+      <ColNames>USERNAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007043</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="4236" parent="4022" name="recipeID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="4237" parent="4022" name="imgID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 char)|0us</DataType>
+    </column>
+    <column id="4238" parent="4022" name="recipeName">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50 char)|0us</DataType>
+    </column>
+    <column id="4239" parent="4022" name="recipeDescribe">
+      <Position>4</Position>
+      <DataType>CLOB|0s</DataType>
+    </column>
+    <index id="4240" parent="4022" name="SYS_C006994">
+      <ObjectId>20049</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-17.12:18:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>recipeID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="4241" parent="4022" name="SYS_C006994">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <ColNames>recipeID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006994</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="4242" parent="4022" name="SYS_C006995">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-12-17.12:18:00</ModifiedTimestamp>
+      <ColNames>imgID</ColNames>
+      <RefSchemaName>SCOTT</RefSchemaName>
+      <RefTableName>Image</RefTableName>
+      <RefKeyName>SYS_C006990</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="4243" parent="4023" name="F_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4244" parent="4023" name="L_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="4245" parent="4023" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="4246" parent="4023" name="PHONE">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="4247" parent="4023" name="MESSAGE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
   </database-model>
 </dataSource>

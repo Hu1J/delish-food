@@ -128,43 +128,15 @@
 		<!-- gallery -->
 	<div class="gallery-ban" id="gallery">
 	<div class="container">
-				<ul id="flexiselDemo1">			
+				<ul id="flexiselDemo1">
+                    {% for p in img_p %}
 					<li>
 						<div class="wthree_testimonials_grid_main">
 							
-									<img src="{{ url_for('static', filename='images/p1.jpg') }}" alt=" " class="img-responsive" />
+									<img src="{{ url_for('static', filename=p.imgPath) }}" alt=" " class="img-responsive" />
 						</div>
 					</li>
-					<li>
-						<div class="wthree_testimonials_grid_main">
-							
-									<img src="{{ url_for('static', filename='images/p2.jpg') }}" alt=" " class="img-responsive" />
-						</div>
-					</li>
-					<li>
-						<div class="wthree_testimonials_grid_main">
-						
-									<img src="{{ url_for('static', filename='images/p3.jpg') }}" alt=" " class="img-responsive" />
-						</div>
-					</li>
-					<li>
-						<div class="wthree_testimonials_grid_main">
-						
-									<img src="{{ url_for('static', filename='images/p6.jpg') }}" alt=" " class="img-responsive" />
-						</div>
-					</li>
-					<li>
-						<div class="wthree_testimonials_grid_main">
-						
-									<img src="{{ url_for('static', filename='images/p4.jpg') }}" alt=" " class="img-responsive" />
-						</div>
-					</li>
-					<li>
-						<div class="wthree_testimonials_grid_main">
-						
-									<img src="{{ url_for('static', filename='images/p5.jpg') }}" alt=" " class="img-responsive" />
-						</div>
-					</li>
+                    {% endfor %}
 				</ul>
 				
 	</div>
@@ -211,20 +183,20 @@
 	<div class="container">
 	<h3 class="tittle-w3"><span>Popular </span>Recipes</h3>
 		<div class="g1 agile-blog1">
-			<a href="#"><img src="{{ url_for('static', filename='images/bl1.jpg') }}" alt="blog1"></a>
+			<a href="#"><img src="{{ url_for('static', filename=img_bl[0].imgPath) }}" alt="blog1"></a>
 				<div class="text-w3">
-					<h3 class="tittle-w3 sub-head"><span>Roasted Heritage Carrot</span></h3>
-					<p class="para-w3l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Ut enim ad minim veniam.</p>
+					<h3 class="tittle-w3 sub-head"><span>{{ example_recipe[0].recipeName }}</span></h3>
+					<p class="para-w3l">{{ example_recipe[0].recipeDescribe }}</p>
 					
 					<a class="read b1" href="single?recipe=">Read More</a>
 				</div>
 				<div class="clearfix"></div>
 		</div>
 		<div class="g2 agile-blog2">
-			<a href="#"><img src="{{ url_for('static', filename='images/bl2.jpg') }}" alt="blog1"></a>
+			<a href="#"><img src="{{ url_for('static', filename=img_bl[1].imgPath) }}" alt="blog1"></a>
 				<div class="text-w3l">
-					<h3 class="tittle-w3 sub-head"><span>Fritto Misto</span></h3>
-					<p class="para-w3l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Ut enim ad minim veniam.</p>
+					<h3 class="tittle-w3 sub-head"><span>{{ example_recipe[1].recipeName }}</span></h3>
+					<p class="para-w3l">{{ example_recipe[1].recipeDescribe }}</p>
 					<a class="read b2" href="single?recipe=">Read More</a>
 						
 				</div>
@@ -301,42 +273,17 @@
 			<div class="col-md-6 agitsworkw3ls-grid-2">
 			   <div class="info-imgs">
 			         <ul>
+                         {% for recipe in recipe_list %}
 					  <li>
 						  <div class="gallery-grid1">
-								<a href="single?recipe=r201812001"><img src="{{ url_for('static', filename='images/s1.jpg') }}" alt=" " class="img-responsive"></a>
+								<a href={{ recipe[0] }}><img src="{{ url_for('static', filename=recipe[1].imgPath) }}" alt=" " class="img-responsive"></a>
 								<div class="p-mask">
 										<h4><span>D</span>elish <span>F</span>ood</h4>
 									<p>Neque porro quisquam est, qui dolorem ipsum.</p>
 								</div>
 							</div>
 					  </li>
-					   <li>
-					     <div class="gallery-grid1">
-							<a href="single?recipe=r201812002"><img src="{{ url_for('static', filename='images/s2.jpg') }}" alt=" " class="img-responsive"></a>
-							<div class="p-mask">
-									<h4><span>D</span>elish <span>F</span>ood</h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
-							</div>
-						</div>
-					   </li>
-						<li>
-						   <div class="gallery-grid1">
-							<a href="single?recipe=r201812003"><img src="{{ url_for('static', filename='images/s3.jpg') }}" alt=" " class="img-responsive"></a>
-							<div class="p-mask">
-									<h4><span>D</span>elish <span>F</span>ood</h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
-							</div>
-						</div>
-						</li>
-					    <li>
-						  <div class="gallery-grid1">
-							<a href="single?recipe=r201812004"><img src="{{ url_for('static', filename='images/s4.jpg') }}" alt=" " class="img-responsive"></a>
-							<div class="p-mask">
-									<h4><span>D</span>elish <span>F</span>ood</h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
-							</div>
-						</div>
-						</li>
+                         {% endfor %}
 					 </ul>
 			   </div>
 				

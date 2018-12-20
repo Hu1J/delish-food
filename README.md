@@ -2,6 +2,7 @@
 ### 库依赖：
 - flask
 - flask_sqlalchemy=2.1
+- cx_oracle
 
 ### 运行(Linux)
 ```
