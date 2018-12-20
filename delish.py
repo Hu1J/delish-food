@@ -72,7 +72,7 @@ def book():
         db.session.add(book)
         db.session.commit()
     except:
-        return '<h1>Unkown bug...</h1>', 500
+        return '<h1>Unknow bug...</h1>', 500
 
     return render_template('thank.html'), 200
 
@@ -116,11 +116,11 @@ def gallery():
     img_g2 = img_g[3:6]
     img_g3 = img_g[6:9]
 
-    print('-----------In func gallery-----------')
-    print(img_g)
-    print(img_g1)
-    print(img_g2)
-    print(img_g3)
+    # print('-----------In func gallery-----------')
+    # print(img_g)
+    # print(img_g1)
+    # print(img_g2)
+    # print(img_g3)
 
     return render_template(
         'gallery.html',
@@ -163,7 +163,7 @@ def suggest():
         db.session.add(cont)
         db.session.commit()
     except:
-        return '<h1>Unkown bug...</h1>', 500
+        return '<h1>只支持输入英文...</h1>', 500
 
     return render_template('thank.html'), 200
 
@@ -183,11 +183,11 @@ def single():
     image = Image.query.filter(Image.imgID == recipe.imgID).first()
     reviews = Comment.query.filter(Comment.recipeID == recipeid).all()
 
-    print('-------------In func single-------------')
-    print(recipeid)
-    print(recipe.recipeDescribe.encode('utf-8'))
-    print(image.imgPath)
-    print(reviews)
+    # print('-------------In func single-------------')
+    # print(recipeid)
+    # print(recipe.recipeDescribe.encode('utf-8'))
+    # print(image.imgPath)
+    # print(reviews)
 
     return render_template(
         'single.html',
@@ -209,6 +209,9 @@ def sendReview():
     message = request.form['message']
     recipeid = request.referrer.split('=')[-1]
 
+    if not recipeID:
+        recipeid = 'r201812001'
+
     # print('-------------In func sendReview-------------')
     # print(recipeid)
     # print(name)
@@ -221,6 +224,6 @@ def sendReview():
         db.session.add(review)
         db.session.commit()
     except:
-        return '<h1>Unkown bug...</h1>', 500
+        return '<h1>只支持输入英文评论...</h1>', 500
 
     return render_template('thank.html'), 200

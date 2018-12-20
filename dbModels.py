@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://username:password@ip:port/xe'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://scott:tiger@47.107.242.169:1522/xe'
 db = SQLAlchemy(app)
 
 
