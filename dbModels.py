@@ -17,20 +17,19 @@ class Book(db.Model):
     1.Book  -- 预定表
         预定单ID-预约时间（小时/分钟/秒）-预约日期-预定人数-是否超过5个
         bookID-createTime-bookTime-bookDate-countPeople-isOverFive
-        str(20) datetime  str(20)                 datetime  int      int 0/1
+        datetime datetime  str(20)                 datetime  int      int 0/1
         主键                                               0/1默认0
 
         此表定义触发器，在插入数据的时候转换bookDate为Oracle的Datetime数据类型(to_date)
     '''
     __tablename__ = 'YRH_Book'
-    bookID = db.Column(db.String(20), primary_key=True)
+    bookID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
     bookTime = db.Column(db.String(20))
     bookDate = db.Column(db.DateTime)
     countPeople = db.Column(db.Integer)
     isOverFive = db.Column(db.Integer, default=0)
 
     def __init__(self, bookTime, bookDate, countPeople):
-        self.bookID = get_time_token()
         self.bookTime = bookTime
         # 巨坑，字符串转成datetime
         self.bookDate = datetime.strptime(bookDate, "%Y-%m-%d")
@@ -90,11 +89,11 @@ class Comment(db.Model):
     4.Comments  -- 食谱的评论
         评论ID-食谱ID-评论者的名字-评论者的邮箱-评论者的电话-评论的内容-发表的时间
         commID-recipe_ID-createTime-viewerName-viewerEmail-viewerPhone-comm-createTime
-        str(20)-str(20)-datatime-str(20)-str(50)-str(50)-text-datetime
+        datetime-str(20)-datatime-str(20)-str(50)-str(50)-text-datetime
         主键   外键
     '''
     __tablename__ = 'YRH_Comment'
-    commID = db.Column(db.String(20), primary_key=True)
+    commID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
     recipeID = db.Column(db.String(20), db.ForeignKey('YRH_Recipe.recipeID'))
     viewerName = db.Column(db.String(20))
     viewerEmail = db.Column(db.String(50))
@@ -103,7 +102,6 @@ class Comment(db.Model):
     createTime = db.Column(db.DateTime, default=datetime.now)
 
     def __init__(self, recipeID, viewerName, viewerEmail, viewerPhone, comm):
-        self.commID = get_time_token()
         self.recipeID = recipeID
         self.viewerName = viewerName
         self.viewerEmail = viewerEmail
@@ -155,17 +153,16 @@ class Contact(db.Model):
     7.Contact  -- 联系我们（意见）
         意见ID-名字-邮箱-内容
         sugID-name-email-describe
-        str(20)-datetime-str(20)-str(50)-text
+        datetime-str(20)-str(50)-text
          主键
     '''
     __tablename__ = 'YRH_Contact'
-    sugID = db.Column(db.String(20), primary_key=True)
+    sugID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
     name = db.Column(db.String(20))
     email = db.Column(db.String(50))
     describe = db.Column(db.Text)
 
     def __init__(self, name, email, describe):
-        self.sugID = get_time_token()
         self.name = name
         self.email = email
         self.describe = describe

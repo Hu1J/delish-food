@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90bea120-509b-40b0-b14e-a5d10ceb4d94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0802834d-324f-45a0-bed5-373e3018c239.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fec426c-c5a7-4d61-991c-6069067be2b7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbModels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delish.py" beforeDir="false" afterPath="$PROJECT_DIR$/delish.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,38 +48,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="177" column="20" lean-forward="true" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+            <state relative-caret-position="2950">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/gallery.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3150">
-              <caret line="150" column="36" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dbModels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4242">
-              <caret line="202" column="44" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
+            <state relative-caret-position="399">
+              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,10 +101,10 @@
         <option value="$PROJECT_DIR$/templates/contact.html" />
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c950a531-fb18-45ae-992c-10499b0c43bc/console.sql" />
-        <option value="$PROJECT_DIR$/dbModels.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/gallery.html" />
         <option value="$PROJECT_DIR$/delish.py" />
+        <option value="$PROJECT_DIR$/dbModels.py" />
       </list>
     </option>
   </component>
@@ -139,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,7 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,11 +197,12 @@
       <workItem from="1545206736648" duration="571000" />
       <workItem from="1545263854869" duration="10008000" />
       <workItem from="1545275756068" duration="1552000" />
+      <workItem from="1545313268027" duration="182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58458000" />
+    <option name="totallyTimeSpent" value="58640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -238,7 +218,7 @@
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50114155" side_tool="true" weight="0.22678763" />
       <window_info id="Structure" order="1" sideWeight="0.50342464" side_tool="true" weight="0.46498907" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49657536" visible="true" weight="0.23588924" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49657536" visible="true" weight="0.23801917" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.33333334" />
@@ -455,17 +435,10 @@
     <entry file="file://$PROJECT_DIR$/static/images/admin.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbModels.py">
+    <entry file="file://$PROJECT_DIR$/delish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4242">
-          <caret line="202" column="44" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
+        <state relative-caret-position="2950">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -476,10 +449,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delish.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="177" column="20" lean-forward="true" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+        <state relative-caret-position="4242">
+          <caret line="202" column="44" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbModels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
