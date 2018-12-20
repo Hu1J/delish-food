@@ -181,7 +181,7 @@ def single():
 
     recipe = Recipe.query.filter(Recipe.recipeID == recipeid).first()
     image = Image.query.filter(Image.imgID == recipe.imgID).first()
-    reviews = Comment.query.filter(Comment.recipeID == recipeid).all().order_by(Comment.createTime)
+    reviews = Comment.query.filter(Comment.recipeID == recipeid).order_by(Comment.createTime).all()
 
     # print('-------------In func single-------------')
     # print(recipeid)
