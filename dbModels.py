@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from random import choice
+from hashlib import md5
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'oracle://username:password@ip:port/xe'
@@ -9,7 +11,16 @@ db = SQLAlchemy(app)
 
 
 def get_time_token():
-    return datetime.now().strftime('%Y%m%d%H%M%S')
+    '''
+    create unique ID
+    :return: A string which hash by md5
+    '''
+    ch = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_+"
+    time_token = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    for i in range(9):
+        time_token += choice(ch)
+
+    return md5(time_token.encode('utf-8')).hexdigest()
 
 
 class Book(db.Model):
@@ -17,13 +28,13 @@ class Book(db.Model):
     1.Book  -- 预定表
         预定单ID-预约时间（小时/分钟/秒）-预约日期-预定人数-是否超过5个
         bookID-createTime-bookTime-bookDate-countPeople-isOverFive
-        datetime datetime  str(20)                 datetime  int      int 0/1
+        str(50) datetime  str(20)                 datetime  int      int 0/1
         主键                                               0/1默认0
 
         此表定义触发器，在插入数据的时候转换bookDate为Oracle的Datetime数据类型(to_date)
     '''
     __tablename__ = 'YRH_Book'
-    bookID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
+    bookID = db.Column(db.String, primary_key=True, default=get_time_token)
     bookTime = db.Column(db.String(20))
     bookDate = db.Column(db.DateTime)
     countPeople = db.Column(db.Integer)
@@ -89,11 +100,11 @@ class Comment(db.Model):
     4.Comments  -- 食谱的评论
         评论ID-食谱ID-评论者的名字-评论者的邮箱-评论者的电话-评论的内容-发表的时间
         commID-recipe_ID-createTime-viewerName-viewerEmail-viewerPhone-comm-createTime
-        datetime-str(20)-datatime-str(20)-str(50)-str(50)-text-datetime
+        str(50)-str(20)-datatime-str(20)-str(50)-str(50)-text-datetime
         主键   外键
     '''
     __tablename__ = 'YRH_Comment'
-    commID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
+    commID = db.Column(db.String, primary_key=True, default=get_time_token)
     recipeID = db.Column(db.String(20), db.ForeignKey('YRH_Recipe.recipeID'))
     viewerName = db.Column(db.String(20))
     viewerEmail = db.Column(db.String(50))
@@ -153,11 +164,11 @@ class Contact(db.Model):
     7.Contact  -- 联系我们（意见）
         意见ID-名字-邮箱-内容
         sugID-name-email-describe
-        datetime-str(20)-str(50)-text
+        str(50)-str(20)-str(50)-text
          主键
     '''
     __tablename__ = 'YRH_Contact'
-    sugID = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow)
+    sugID = db.Column(db.String, primary_key=True, default=get_time_token)
     name = db.Column(db.String(20))
     email = db.Column(db.String(50))
     describe = db.Column(db.Text)

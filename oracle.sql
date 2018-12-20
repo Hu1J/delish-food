@@ -1,4 +1,3 @@
--- 12-20晚重来
 -- Book表的触发器，当countpeople为-1时，将isoverfive置为1
 create or replace trigger fix_bookDate before insert
 on "YRH_Book"
@@ -13,18 +12,18 @@ end;
 
 
 
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 17:17:27', 'YYYY-MM-DD HH24:MI:SS'), '17:17', TO_DATE('2018-12-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), -1, 1);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 17:17:37', 'YYYY-MM-DD HH24:MI:SS'), '17:17', TO_DATE('2018-12-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 17:42:35', 'YYYY-MM-DD HH24:MI:SS'), '17:42', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 17:54:18', 'YYYY-MM-DD HH24:MI:SS'), '17:54', TO_DATE('2018-12-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 18:01:14', 'YYYY-MM-DD HH24:MI:SS'), '18:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 18:14:50', 'YYYY-MM-DD HH24:MI:SS'), '18:14', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 20:42:26', 'YYYY-MM-DD HH24:MI:SS'), '06:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 20:42:37', 'YYYY-MM-DD HH24:MI:SS'), '06:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 16:26:43', 'YYYY-MM-DD HH24:MI:SS'), '16:26', TO_DATE('2018-12-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 4, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 16:43:28', 'YYYY-MM-DD HH24:MI:SS'), '16:43', TO_DATE('2018-12-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 5, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 16:50:51', 'YYYY-MM-DD HH24:MI:SS'), '16:50', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
-INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES (TO_DATE('2018-12-20 18:37:00', 'YYYY-MM-DD HH24:MI:SS'), '18:36', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('04e6c89d094f13d47a67ae61fdcde96d', '17:17', TO_DATE('2018-12-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), -1, 1);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('87ef629b47b383ffbf71156f9b9b85cf', '17:17', TO_DATE('2018-12-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('99ae8044eabbef85de64cd549f76c778', '17:42', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('ed1ea5d824b0697b9d982c8ec88397ae', '17:54', TO_DATE('2018-12-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('4358aa48662e86aba95644fd341cd322', '18:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('47c73aa933ce54c15d7ebce5b1cef879', '18:14', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('c7f1aab81bccd3cc6db55fb9f98756db', '06:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('bc12f747604df5ef789eede7f1b394de', '06:01', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 2, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('24da0d653f9eedd0ecc8e542cc498970', '16:26', TO_DATE('2018-12-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 4, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('24da0d653f9efgee4cc8eaebcc498970', '16:43', TO_DATE('2018-12-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 5, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('24da0d653f9eedd0ec42eaebcc498970', '16:50', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
+INSERT INTO SCOTT."YRH_Book" ("bookID", "bookTime", "bookDate", "countPeople", "isOverFive") VALUES ('24da0d653f9eeflhjcc8eaebcc498970', '18:36', TO_DATE('2018-12-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1, 0);
 
 
 INSERT INTO SCOTT."YRH_Image" ("imgID", "imgPath") VALUES ('s1.jpg', 'images/s1.jpg');
@@ -96,47 +95,24 @@ INSERT INTO SCOTT."YRH_Detail" (PHONE, EMAIL, ADDRESS) VALUES ('+1 (100)222-23-3
 
 
 
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:51:08', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', 'RI', 'TIAN');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:51:39', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', 'wyzxkfx@gmail.com', 'TIAN');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:51:48', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', 'RI', 'TIAN');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:51:49', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', 'RI', 'TIAN');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:51:50', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', 'RI', 'TIAN');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:54:57', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:55:28', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:55:30', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:55:31', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:56:13', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:56:38', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:56:40', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:57:47', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 20:57:49', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:00:30', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123@qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:00:38', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123qq.com', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:00:45', 'YYYY-MM-DD HH24:MI:SS'), 'YAO', '123', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:00:51', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI TIAN', '123', 'dqdq');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:51', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:52', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 12:11:21', 'YYYY-MM-DD HH24:MI:SS'), 'MMyouzhao', '2646461468@qq.com', 'I want to book but I do not know how to go to your address...
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('9aed618ad6378bace4e459e69b08950e', 'YYO', 'wyzxkfx@gmail.com', 'TIAN');
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('0d35ae7d7472d74150e33a42b70afee6', 'YAO', '123@qq.com', 'dqdq');
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('6192195514aae9117a8afbce0fa6cbd3', 'YAORI', '123ewdad@qq.com', 'EQW');
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('e1f005ef3db5900a2a628f8170a8b0e5', 'YYyouzhao', '2646461468@qq.com', 'I want to book but I do not know how to go to your address...
 Please send me some suggest line schemas.');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:55', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:56', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:57', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:58', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:59', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:33:00', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:34:17', 'YYYY-MM-DD HH24:MI:SS'), 'yaoritian', 'yaoritian@yaoritian.com', 'yaoritian');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:43', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:48', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
-INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES (TO_DATE('2018-12-20 21:32:49', 'YYYY-MM-DD HH24:MI:SS'), 'YAORI', '123ewdad@qq.com', 'EQW');
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('8d9016b81e6112c4421417fb42603ce9', 'YAORI', '123ewdad@qq.com', 'EQW');
+INSERT INTO SCOTT."YRH_Contact" ("sugID", NAME, EMAIL, DESCRIBE) VALUES ('30aa4ec3d64717f8f8d35ec3408194f2', 'YYYY-MM-n', 'yaoritian@yaoritian.com', 'yaoritian');
 
 
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-20 17:00:21', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'wyn', '931724899@qq.com', '13107621539', 'xxx', TO_DATE('2018-12-20 17:00:21', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-20 17:00:41', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'lml', '6666666666@qq.com', '18859132576', 'hello!', TO_DATE('2018-12-20 17:00:41', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-20 18:01:50', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'zhugeliang', 'zhugeliang181@chengxiangfu.com', '18866666666', 'lalalalalalalalalalalalalalalalalalalala', TO_DATE('2018-12-20 18:01:50', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-20 20:54:59', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'app', 'xxcccss@163.com', '12134979756', 'sending a review', TO_DATE('2018-12-20 20:54:59', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-17 17:01:57', 'YYYY-MM-DD HH24:MI:SS'), 'r201812003', 'admin', '23333@qq.com', '100886', 'Thank for your suggestions~', TO_DATE('2018-12-17 17:01:57', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-17 15:52:30', 'YYYY-MM-DD HH24:MI:SS'), 'r201812003', 'Hu1J', '2948696442@qq.com', '10086', 'It look good!!!', TO_DATE('2018-12-17 15:52:31', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-17 19:40:57', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'HU1J', '2948696442@qq.com', '100666558', 'I could not do it, it seem defficult...', TO_DATE('2018-12-17 19:40:58', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-19 09:25:37', 'YYYY-MM-DD HH24:MI:SS'), 'r201812003', 'liutianqi', '23333@qq.com', '10068999', 'Tai bang le.', TO_DATE('2018-12-19 09:25:37', 'YYYY-MM-DD HH24:MI:SS'));
-INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES (TO_DATE('2018-12-20 18:46:25', 'YYYY-MM-DD HH24:MI:SS'), 'r201812001', 'shen', '568452132@qq.com', '15860282047', 'the best', TO_DATE('2018-12-20 18:46:25', 'YYYY-MM-DD HH24:MI:SS'));
 
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('30aa4ec3d64717f8f8d35ec3408194f2', 'YYY1812001', 'wyn', '931724899@qq.com', '13107621539', 'xxx', TO_DATE('2018-12-20 17:00:21', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('e5af59354803ac15036b4e406ba381ca', 'YYYY812001', 'lml', '6666666666@qq.com', '18859132576', 'hello!', TO_DATE('2018-12-20 17:00:41', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('f6f8842d1203191fc16a735c6cc075cd', 'zhugeliang181@chengxiangfu.com', '18866666666', 'lalalalalalalalalalalalalalalalalalalala', TO_DATE('2018-12-20 18:01:50', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('93eb8c8311520362071b9b6f8591d8c8', 'YY01812001', 'app', 'xxcccss@163.com', '12134979756', 'sending a review', TO_DATE('2018-12-20 20:54:59', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('bcfcd50d1c42337047a9f5eb91582984', 'Y201812003', 'admin', '23333@qq.com', '100886', 'Thank for your suggestions~', TO_DATE('2018-12-17 17:01:57', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('2bd7258651e96bb669d4f78ad03c0506', 'YYYY-12003', 'Hu1J', '2948696442@qq.com', '10086', 'It look good!!!', TO_DATE('2018-12-17 15:52:31', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('c6735bc6a9ae724f441b6e797cafabde', 'YYYY-12001', 'HU1J', '2948696442@qq.com', '100666558', 'I could not do it, it seem defficult...', TO_DATE('2018-12-17 19:40:58', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('b96560debabc299069bf94ec1afe63ec', 'YYYY-12003', 'liutianqi', '23333@qq.com', '10068999', 'Tai bang le.', TO_DATE('2018-12-19 09:25:37', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO SCOTT."YRH_Comment" ("commID", "recipeID", "viewerName", "viewerEmail", "viewerPhone", COMM, "createTime") VALUES ('f2148c506cd0d014f8aa866ec3b39e0c', 'YYYY812001', 'shen', '568452132@qq.com', '15860282047', 'the best', TO_DATE('2018-12-20 18:46:25', 'YYYY-MM-DD HH24:MI:SS'));
+
+commit ;

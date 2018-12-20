@@ -8,7 +8,7 @@ db.create_all()
 '''
 返回首页index.html
 '''
-@app.route('/')
+@app.route('/', methods=['GET'])
 @app.route('/index', methods=['GET'])
 def index():
     img_p = Image.query.filter(Image.imgID.startswith('p')).all()
@@ -224,6 +224,6 @@ def sendReview():
         db.session.add(review)
         db.session.commit()
     except:
-        return '<h1>只支持输入英文评论...</h1>', 500
+        return '<h1>只支持输入英文...</h1>', 500
 
     return render_template('thank.html'), 200
