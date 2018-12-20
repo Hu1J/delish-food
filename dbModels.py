@@ -34,7 +34,7 @@ class Book(db.Model):
         此表定义触发器，在插入数据的时候转换bookDate为Oracle的Datetime数据类型(to_date)
     '''
     __tablename__ = 'YRH_Book'
-    bookID = db.Column(db.String, primary_key=True, default=get_time_token)
+    bookID = db.Column(db.String(50), primary_key=True, default=get_time_token)
     bookTime = db.Column(db.String(20))
     bookDate = db.Column(db.DateTime)
     countPeople = db.Column(db.Integer)
@@ -104,7 +104,7 @@ class Comment(db.Model):
         主键   外键
     '''
     __tablename__ = 'YRH_Comment'
-    commID = db.Column(db.String, primary_key=True, default=get_time_token)
+    commID = db.Column(db.String(50), primary_key=True, default=get_time_token)
     recipeID = db.Column(db.String(20), db.ForeignKey('YRH_Recipe.recipeID'))
     viewerName = db.Column(db.String(20))
     viewerEmail = db.Column(db.String(50))
@@ -168,7 +168,7 @@ class Contact(db.Model):
          主键
     '''
     __tablename__ = 'YRH_Contact'
-    sugID = db.Column(db.String, primary_key=True, default=get_time_token)
+    sugID = db.Column(db.String(50), primary_key=True, default=get_time_token)
     name = db.Column(db.String(20))
     email = db.Column(db.String(50))
     describe = db.Column(db.Text)
