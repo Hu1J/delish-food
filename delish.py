@@ -181,7 +181,7 @@ def single():
 
     recipe = Recipe.query.filter(Recipe.recipeID == recipeid).first()
     image = Image.query.filter(Image.imgID == recipe.imgID).first()
-    reviews = Comment.query.filter(Comment.recipeID == recipeid).all()
+    reviews = Comment.query.filter(Comment.recipeID == recipeid).all().order_by(Comment.createTime)
 
     # print('-------------In func single-------------')
     # print(recipeid)
@@ -209,7 +209,7 @@ def sendReview():
     message = request.form['message']
     recipeid = request.referrer.split('=')[-1]
 
-    if not recipeID:
+    if not recipeid:
         recipeid = 'r201812001'
 
     # print('-------------In func sendReview-------------')
