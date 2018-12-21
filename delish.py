@@ -136,8 +136,10 @@ def gallery():
 @app.route('/codes')
 @app.route('/icons')
 def not_allow():
-    abort(401)
-    return '<h1>Visit this page is not allow!!!</h1>', 401
+    # Dis allowed to visit this page.
+    # return 403 status code
+    abort(403)
+    return '<h1>Visit this page is not allow!!!</h1>', 403
 
 
 '''
