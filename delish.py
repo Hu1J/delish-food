@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, abort, redirect, url_for
 from dbModels import db, Book, Recipe, Image, Comment, Chef, Contact
+import re
 
 app = Flask(__name__)
 db.create_all()
+
+# 检查是否有中文
+zhmodel = re.compile(u'[\u4e00-\u9fa5]')
 
 
 '''
@@ -161,6 +165,9 @@ def suggest():
     message = request.form["Message"]
 
     try:
+        if zhmodel.search(name) or zhmodel.search(message):
+            raise Exception
+
         cont = Contact(name, email, message)
         db.session.add(cont)
         db.session.commit()
@@ -222,6 +229,9 @@ def sendReview():
     # print(message)
 
     try:
+        if zhmodel.search(name) or zhmodel.search(message):
+            raise Exception
+
         review = Comment(recipeid, name, email, phone, message)
         db.session.add(review)
         db.session.commit()
