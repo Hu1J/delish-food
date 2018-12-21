@@ -236,6 +236,6 @@ def sendReview():
         db.session.add(review)
         db.session.commit()
     except:
-        return redirect(url_for('single', recipeid=recipeid))
+        return redirect(url_for('single', recipe=recipeid))
 
     return render_template('thank.html'), 200
