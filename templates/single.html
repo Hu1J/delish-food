@@ -110,7 +110,7 @@
 														<div id="video"> <img src="{{ url_for('static', filename=imgPath) }}" alt="" class="img-responsive" /> </div>
 													</div>
 													 <h4>{{ recipe.recipeName }}</h4>
-													 <p>{{ recipe.recipeDescribe }}</p>
+													 <p>{{ recipe.recipeDescribe | safe }}</p>
 										    </div>
 										
 										<div class="admin-text">

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, redirect, url_for
 from dbModels import db, Book, Recipe, Image, Comment, Chef, Contact
 
 app = Flask(__name__)
@@ -72,7 +72,7 @@ def book():
         db.session.add(book)
         db.session.commit()
     except:
-        return '<h1>Unknow bug...</h1>', 500
+        return redirect(url_for('index'))
 
     return render_template('thank.html'), 200
 
@@ -165,7 +165,7 @@ def suggest():
         db.session.add(cont)
         db.session.commit()
     except:
-        return '<h1>只支持输入英文...</h1>', 500
+        return redirect(url_for('contact'))
 
     return render_template('thank.html'), 200
 
@@ -226,6 +226,6 @@ def sendReview():
         db.session.add(review)
         db.session.commit()
     except:
-        return '<h1>只支持输入英文...</h1>', 500
+        return redirect(url_for('single', recipeid=recipeid))
 
     return render_template('thank.html'), 200
